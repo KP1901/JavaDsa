@@ -4,13 +4,16 @@ public class pr {
 
 	public static void main(String[] args) {
 
-		List<Integer> list = new LinkedList<>();
-		list.add(30);
-		list.add(20);
-		list.add(30);
+		Collection<Integer> list1 = new ArrayList<>();
+		list1.add(10);
+		list1.add(20);
+		list1.add(30);
+		list1.add(10);
 
-		Collections.sort(list);
-		System.out.println(list);
+
+
+		System.out.println(list1.contains(20));
+
 
 	}
 }

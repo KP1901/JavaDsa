@@ -51,6 +51,16 @@ public class ArrayList_01 {
 			System.out.println("elements " + iterator.next());
 		}
 
+//		toArray -> convert (collection) to array
+		Object[] arr = list1.toArray();
+
+		for (Object value : arr) {
+			System.out.println(value);
+		}
+
+//		contains
+		System.out.println(list3.contains(400));
+
 //		list methods
 
 		ArrayList<Integer> list3 = new ArrayList<>();
@@ -65,15 +75,6 @@ public class ArrayList_01 {
 		list3.set(2, 400);
 		System.out.println(list3);
 
-//		toArray -> convert (collection) to array
-		Object[] arr = list3.toArray();
-
-		for (Object value : arr) {
-			System.out.println(value);
-		}
-
-//		contains
-		System.out.println(list3.contains(400));
 
 //	    Arraylist methods
 
@@ -131,6 +132,8 @@ size()
 clear()
 isEmpty()
 
+
+
 Applications:
 - Data storage
 - Data manipulation
@@ -151,11 +154,18 @@ Implementations:
 - Vector
 
 Methods:
-add()
 get()
 set()
-remove()
+add(index, element)
+addAll(index, collection)
+remove(index)
 indexOf()
+lastIndexOf()
+listIterator()
+subList()
+replaceAll()
+sort()
+
 
 Time Complexity:
 Access -> Depends on implementation
