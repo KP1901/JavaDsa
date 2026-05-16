@@ -1,0 +1,101 @@
+Logarithms (Easy Notes)
+
+What is a Logarithm?
+
+A logarithm helps us find the power/exponent.
+
+If:
+
+a
+x
+=b
+
+then:
+
+log
+a
+	​
+
+b=x
+
+Meaning:
+
+“What power should be given to a to get b?”
+
+Simple Understanding
+Example 1
+2
+3
+=8
+
+Question:
+
+2 multiplied by itself how many times becomes 8?
+
+2
+1
+=2
+2
+2
+=4
+2
+3
+=8
+
+Answer = 3
+
+So:
+
+log
+2
+	​
+
+8=3
+Example 2
+10
+3
+=1000
+
+Question:
+
+10 multiplied by itself how many times becomes 1000?
+
+10
+1
+=10
+10
+2
+=100
+10
+3
+=1000
+
+So:
+
+log
+10
+	​
+
+1000=3
+Main Idea
+Exponent Form
+2
+3
+=8
+Logarithm Form
+log
+2
+	​
+
+8=3
+
+Both mean the same thing.
+
+Easy Memory Trick
+Exponent asks:
+
+“What is the result?”
+
+Logarithm asks:
+
+“What power was used?”

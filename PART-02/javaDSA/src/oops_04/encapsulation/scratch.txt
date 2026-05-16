@@ -1,0 +1,210 @@
+ENCAPSULATION IN JAVA – QUICK NOTES
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+What is Encapsulation?
+
+Encapsulation means:
+
+"Wrapping data (variables) and methods into a single unit (class) and controlling access to that data."
+
+It is one of the main pillars of OOP (Object-Oriented Programming).
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Real-Life Example
+
+ATM Machine Example:
+
+You can interact using buttons
+But you cannot directly access bank data
+
+Same in Java:
+
+Variables are hidden using private
+Access is given using methods
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Main Idea → Data Hiding
+
+We hide variables from direct access.
+
+Example:
+
+class Student {
+    private int age;
+}
+
+This is NOT allowed:
+
+Student s = new Student();
+s.age = 20; // Error
+
+Because age is private.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Accessing Private Variables
+
+Use:
+
+Getter → Read data
+Setter → Update data
+
+Example:
+
+class Student {
+
+    private int age;
+
+    // Setter
+    void setAge(int age) {
+        this.age = age;
+    }
+
+    // Getter
+    int getAge() {
+        return age;
+    }
+}
+
+Usage:
+
+public class App {
+
+    public static void main(String[] args) {
+
+        Student s = new Student();
+
+        s.setAge(21);
+
+        System.out.println(s.getAge());
+    }
+}
+
+Output:
+
+21
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Why Use Encapsulation?
+Security
+Prevents direct modification of data
+
+Example:
+
+private double balance;
+Control Over Data
+We can validate data before storing
+
+Example:
+
+void setAge(int age) {
+
+    if(age > 0) {
+        this.age = age;
+    }
+}
+Better Maintenance
+Internal code can change without affecting other classes
+Improves Readability
+Makes code clean and organized
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Important Keywords
+
+private
+→ Accessible only inside the class
+
+public
+→ Accessible everywhere
+
+this
+→ Refers to current object
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Encapsulation Formula
+Private Variables + Public Methods = Encapsulation
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Full Example
+class BankAccount {
+
+    private double balance;
+
+    void deposit(double amount) {
+
+        if(amount > 0) {
+            balance += amount;
+        }
+    }
+
+    double getBalance() {
+        return balance;
+    }
+}
+
+public class App {
+
+    public static void main(String[] args) {
+
+        BankAccount b = new BankAccount();
+
+        b.deposit(5000);
+
+        System.out.println(b.getBalance());
+    }
+}
+
+Output:
+
+5000.0
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Encapsulation vs Abstraction
+
+Encapsulation:
+
+Hides data
+Focus on security
+Uses private variables
+
+Abstraction:
+
+Hides implementation
+Focus on simplicity
+Uses abstract classes/interfaces
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Is Encapsulation Only About Private Variables?
+
+No.
+
+It is about:
+
+Controlling access
+Protecting data
+Exposing only required functionality
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Best Practices
+
+✔ Make variables private
+
+✔ Use getters and setters
+
+✔ Validate data inside setters
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+One-Line Definition
+
+"Encapsulation is the process of hiding data and allowing controlled access through methods."
