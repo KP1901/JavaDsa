@@ -177,10 +177,12 @@ STACK
 - Legacy class
 - Extends Vector
 
+
 Methods:
-push()
-pop()
-peek()
+push() -> insert at end
+pop() -> remove from end
+peek() -> view from top
+search() -> find the position of element from top
 
 Time Complexity:
 push -> O(1)

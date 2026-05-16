@@ -164,6 +164,8 @@ peekLast()
 Special Stack Methods:
 push()
 pop()
+peek()
+
 
 Time Complexity:
 add/remove at both ends -> O(1)

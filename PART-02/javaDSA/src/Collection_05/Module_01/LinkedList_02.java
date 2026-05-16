@@ -170,13 +170,37 @@ Internal Working:
 - Each node stores:
   predata | value | nextValue
 
-Methods:
-add()
-remove()
-get()
-set()
+
+
+Note:
+After Java 21, some Deque-like methods were added to the List interface
+through SequencedCollection.
+
+That’s why you can use methods like:
 addFirst()
 addLast()
+getFirst()
+getLast()
+removeFirst()
+removeLast()
+
+even with:
+
+List<Integer> list = new LinkedList<>();
+
+because LinkedList implements both List and Deque.
+
+Methods:
+addFirst()
+addLast()
+removeFirst()
+removeLast()
+getFirst()
+getLast()
+----------------------------------------------------
+from queue -> linkedlist
+peek() -> see head of dynamic array
+poll() -> remove front/head element
 
 Time Complexity:
 Access -> O(n)
@@ -188,5 +212,34 @@ Applications:
 - Frequent insertion/deletion
 - Queue implementation
 - Deque implementation
+
+
+| If using as | Common methods                 |
+| ----------- | ------------------------------ |
+| List        | `get()`, `set()`, `add(index)` |
+| Queue       | `peek()`, `poll()`, `offer()`  |
+| Deque       | `addFirst()`, `removeLast()`   |
+
+---------------------------------------------------------------------------
+
+Memory trick:
+
+ArrayList → good at searching
+LinkedList → good at inserting/removing
+
+Because:
+
+ArrayList uses indexes
+LinkedList uses links/nodes
+---------------------------------------------------------------
+
+| Situation                         | Use LinkedList? |
+| --------------------------------- | --------------- |
+| Frequent insert/remove at start   | ✅               |
+| Queue implementation              | ✅               |
+| Deque implementation              | ✅               |
+| Stack using Deque methods         | ✅               |
+| Frequent middle insertion/removal | ✅               |
+| Fast indexing needed              | ❌               |
 
 */

@@ -38,11 +38,12 @@ Internal Working:
 - Binary Heap
 
 Methods:
-offer()
-poll()
-peek()
 add()
-remove()
+offer()
+poll() -> remove high priority element
+peek() -> view highest priority element
+remove() ->remove head element
+element() -> view head element
 
 Time Complexity:
 offer -> O(log n)
@@ -88,4 +89,20 @@ Applications:
 - Hierarchical Data
 - File Systems
 - Binary Search Tree base
+--------------------------------------------------------------------------'
+
+Height of binary heap is log n
+
+            1  -> 1 node
+          /   \
+         2     3 - 2 node
+       /  \   /  \
+      4   5  6   7 - 4 node
+
+Level 0 -> 1 node
+Level 1 -> 2 nodes
+Level 2 -> 4 nodes
+Level 3 -> 8 nodes
+Level 4 -> 16 nodes
+
  */

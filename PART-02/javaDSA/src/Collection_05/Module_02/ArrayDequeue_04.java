@@ -76,4 +76,34 @@ Applications:
 - Queue implementation
 - Deque operations
 - Sliding Window Problems
+
+------------------------------------------------------------------
+
+LinkedList
+
+Uses:
+Nodes + links
+
+Visual:
+[10] <-> [20] <-> [30]
+
+Each node stores:
+-data
+-prev pointer
+-next pointer
+
+-------------------------------------------------------------------
+
+ArrayDeque
+
+Uses:
+Circular Dynamic Array
+
+Visual:
+[10][20][30]
+
+No nodes or pointers.
+
+NOTE : LinkedList and ArrayDeque support almost the same
+ deque operations because both implement Deque.
 */

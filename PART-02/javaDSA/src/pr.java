@@ -4,16 +4,12 @@ public class pr {
 
 	public static void main(String[] args) {
 
-		Collection<Integer> list1 = new ArrayList<>();
-		list1.add(10);
-		list1.add(20);
-		list1.add(30);
-		list1.add(10);
+		PriorityQueue<Integer> list6 = new PriorityQueue<>();
+		list6.offer(30);
+		list6.offer(20);
+		list6.offer(4);
+		list6.offer(1);
 
-
-
-		System.out.println(list1.contains(20));
-
-
+		System.out.println(list6);
 	}
 }

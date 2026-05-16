@@ -113,28 +113,17 @@ public class Vector_03 {
 		list6.add(101);
 		list6.add(102);
 
-//		addFirst
-		list6.addFirst(100);
+//		addElement -> end
+		list6.addElement(100);
 		System.out.println(list6);
 
-//		addLast
-		list6.addLast(105);
+//		removeElement
+		list6.removeElement(105);
 		System.out.println(list6);
 
-//		removeFirst
-		list6.removeFirst();
+//		elementAt(index)
+		list6.elementAt(1);
 		System.out.println(list6);
-
-//		removeLast
-		list6.removeLast();
-		System.out.println(list6);
-
-//		getFirst
-		System.out.println(list6.getFirst());
-
-//		getLast
-		System.out.println(list6.getLast());
-
 
 
 	}
@@ -143,6 +132,7 @@ public class Vector_03 {
 /*
 
 NOtes :
+
 VECTOR
 
 - Dynamic array
@@ -155,10 +145,12 @@ Internal Working:
 - Resizable array
 
 Methods:
-add()
-remove()
-get()
-set()
+addElement()
+removeElement()
+elementAt(index)
+firstElement()
+lastElement()
+capacity()
 
 Time Complexity:
 Access -> O(1)

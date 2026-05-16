@@ -59,7 +59,7 @@ public class ArrayList_01 {
 		}
 
 //		contains
-		System.out.println(list3.contains(400));
+		System.out.println(list1.contains(400));
 
 //		list methods
 
@@ -74,6 +74,9 @@ public class ArrayList_01 {
 //		set -> update exist one
 		list3.set(2, 400);
 		System.out.println(list3);
+
+//		indexOf -> give index
+		System.out.println(list3.indexOf(400));
 
 
 //	    Arraylist methods
@@ -131,8 +134,6 @@ contains()
 size()
 clear()
 isEmpty()
-
-
 
 Applications:
 - Data storage
@@ -192,22 +193,35 @@ Internal Working:
 - Resizable array
 
 Methods:
-add()
-remove()
-get()
-set()
-contains()
-size()
+ensureCapacity() -> don't grow everytime just create the capacity(size) 100 / reserve extra spaec
+trimToSize() -> remove unused space
+clone() -> create a copy of java collection Arraylist
+
+Note : we see capacity in java using capacity method in vector class
 
 Time Complexity:
 Access -> O(1)
 Add at end -> O(1)
 Remove/Add in middle -> O(n-1) -> O(n)
+Exampe :
+[10,20,30,40] add 15 at index 1
+[10,_,20,30,40] so it shifted 3 times -> n - 1 -> O(n)
+
 Search -> O(n) -> check every element till the n size
 
 Applications:
 - Storing dynamic data
 - Frequent access using index
 - General-purpose lists
+---------------------------------------------------------------
+
+| Situation                          | Use ArrayList? |
+| ---------------------------------- | -------------- |
+| Access by index frequently         | ✅              |
+| Store and iterate data             | ✅              |
+| Read operations more               | ✅              |
+| Append at end                      | ✅              |
+| Insert/remove in middle frequently | ❌              |
+
 
  */
