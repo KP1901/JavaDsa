@@ -9,9 +9,9 @@ public class Comparable_02 {
 	public static void main(String[] args) {
 		List<Student> students = new ArrayList<>();
 
-		Student s1 = new Student(21, "kiran", 175);
-		Student s2 = new Student(20, "ajit", 175);
-		Student s3 = new Student(21, "kaustubh", 175);
+		Student s1 = new Student(21, "kiran", 100);
+		Student s2 = new Student(20, "ajit", 20);
+		Student s3 = new Student(21, "kaustubh", 25);
 
 		students.add(s1);
 		students.add(s2);

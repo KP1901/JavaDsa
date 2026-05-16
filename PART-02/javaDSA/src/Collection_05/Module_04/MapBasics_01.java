@@ -2,7 +2,7 @@ package Collection_05.Module_04;
 
 import java.util.*;
 
-public class HashMap_01 {
+public class MapBasics_01 {
 	public static void main(String[] args) {
 		Map<String, String> map = new HashMap<>();
 
@@ -78,36 +78,43 @@ public class HashMap_01 {
 
 	}
 }
+
 /*
 
--------------------------------------------------------------------------------------------------
-HASHMAP
+MAP
 
 - Stores data in key-value pairs
 - Keys must be unique
 - Values can be duplicate
-- Does not maintain insertion order
-- Allows one null key
-- Allows multiple null values
-- Fast lookup using keys
+- Part of Collection Framework
+- Child implementations:
+  HashMap
+  LinkedHashMap
+  TreeMap
 
-Internal Working:
-- Hash Table
+Most Used Methods:
+put()
+get()
+remove()
+containsKey()
+containsValue()
+keySet()
+values()
+entrySet()
+getOrDefault()
+putIfAbsent()
+replace()
+size()
+isEmpty()
+clear()
+forEach()
 
-Methods:
-- all methods of Map
-- own method of clone()
-
-
-Time Complexity:
-put()         -> O(1)
-get()         -> O(1)
-remove()      -> O(1)
-containsKey() -> O(1)
 
 Applications:
-- Caching
+- Fast lookup
+- Data mapping
 - Database indexing
-- Frequency counting
-- Fast key-value storage
+- Caching
+
+
  */

@@ -194,4 +194,20 @@ Applications:
 - Recursion
 - Expression evaluation
 - Backtracking
+---------------------------------------------------------------
+
+| Feature              | ArrayList ArrayList            | LinkedList LinkedList                | Vector Vector          |
+| -------------------- | ------------------------------ | ------------------------------------ | ---------------------- |
+| Internal Working     | Dynamic Array                  | Doubly Linked List                   | Dynamic Array          |
+| Insertion Order      | Maintained                     | Maintained                           | Maintained             |
+| Duplicate Values     | Allowed                        | Allowed                              | Allowed                |
+| Null Values          | Allowed                        | Allowed                              | Allowed                |
+| Access Time          | Fast O(1)                      | Slow O(n)                            | Fast O(1)              |
+| Insert/Delete Middle | Slow O(n)                      | Faster O(1)                          | Slow O(n)              |
+| Thread Safe          | No                             | No                                   | Yes                    |
+| Synchronization      | Not synchronized               | Not synchronized                     | Synchronized           |
+| Faster               | Faster                         | Good for frequent insertion/deletion | Slower                 |
+| Special Method       | ensureCapacity(), trimToSize() | addFirst(), addLast()                | capacity()             |
+| Best Use             | Fast access                    | Frequent modifications               | Thread-safe operations |
+
  */

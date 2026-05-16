@@ -128,12 +128,14 @@ Features:
 - Provides common methods
 
 Methods:
-add()
-remove()
-contains()
+add() -> at element
+remove() -> remove element
+contains() -> check element
 size()
-clear()
-isEmpty()
+clear() -> clear all element
+isEmpty() -> check size is o or not
+containsAll() -> check whether all element exits
+retainAll() -> keep only common elements
 
 Applications:
 - Data storage

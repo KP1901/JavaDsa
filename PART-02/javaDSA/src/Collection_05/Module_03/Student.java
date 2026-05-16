@@ -7,12 +7,10 @@ public class Student {
 	public int rollNo;
 	public String name;
 
+	//  It converts an object into a String representation of that object.
 	@Override
 	public String toString() {
-		return "Student{" +
-				"rollNo=" + rollNo +
-				", name='" + name + '\'' +
-				'}';
+		return "Student{" + "rollNo. = " + rollNo + ",name= '" + name + "'}";
 	}
 
 

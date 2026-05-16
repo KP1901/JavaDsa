@@ -7,18 +7,6 @@ public class Student implements Comparable<Student> {
 	public int weight;
 
 
-	public int getAge() {
-		return this.age;
-	}
-
-	public void setAge(int age) {
-		this.age = age;
-	}
-
-	public String getName() {
-		return name;
-	}
-
 	@Override
 	public String toString() {
 		return "Student{" +
@@ -26,18 +14,6 @@ public class Student implements Comparable<Student> {
 				", name='" + name + '\'' +
 				", weight=" + weight +
 				'}';
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
-
-	public int getWeight() {
-		return weight;
-	}
-
-	public void setWeight(int weight) {
-		this.weight = weight;
 	}
 
 	public Student(int age, String name, int weight) {

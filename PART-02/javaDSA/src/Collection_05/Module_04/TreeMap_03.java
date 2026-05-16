@@ -94,13 +94,8 @@ Internal Working:
 - Red-Black Tree (Self Balancing BST)
 
 Methods:
-put()
-get()
-remove()
-firstKey()
-lastKey()
-higherKey()
-lowerKey()
+- all methods of Map
+- it has no own method
 
 Time Complexity:
 put()    -> O(log n)
@@ -112,4 +107,19 @@ Applications:
 - Ranking systems
 - Range searching
 - Ordered data processing
+--------------------------------------------------------------
+
+| Feature          | HashMap HashMap  |  LinkedHashMap              |  TreeMap        |
+| ---------------- | ---------------- | --------------------------- | --------------- |
+| Order            | No order         | Insertion order maintained  | Sorted order    |
+| Internal Working | Hash Table       | Hash Table + Linked List    | Red-Black Tree  |
+| Time Complexity  | O(1)             | O(1)                        | O(log n)        |
+| Null Key         | One allowed      | One allowed                 | Not allowed     |
+| Null Values      | Multiple allowed | Multiple allowed            | Allowed         |
+| Sorting          | No               | No                          | Yes             |
+| Faster           | Fastest          | Slightly slower             | Slowest         |
+| Implements       | Map              | Map                         | NavigableMap    |
+| Special Method   | clone()          | removeEldestEntry()         | No own method   |
+| Best Use         | Fast lookup      | Ordered data                | Sorted data     |
+
  */

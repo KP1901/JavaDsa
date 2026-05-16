@@ -15,6 +15,7 @@ public class LinkedHashSet_02 {
 		System.out.println(set);
 	}
 }
+
 /*
 NOtes :
 
@@ -30,11 +31,9 @@ Internal Working:
 - Hash Table + Doubly Linked List
 
 Methods:
-add()
-remove()
-contains()
-size()
-clear()
+-methods from Set
+-methods from Collection
+-methods from HashSet
 
 Time Complexity:
 add      -> O(1)

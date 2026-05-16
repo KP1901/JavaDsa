@@ -76,5 +76,13 @@ Applications:
 | Anonymous class | Old            | ❌         | ❌      |
 | Separate class  | Clean reusable | ✅         | Medium |
 | Lambda          | Short          | ❌ usually | ✅      |
+-----------------------------------------------------------------------
 
+VISUAL :
+
+Comparable :
+Student object itself knows sorting we just need provide compareTo()
+
+Comparator :
+External logic decides sorting
  */

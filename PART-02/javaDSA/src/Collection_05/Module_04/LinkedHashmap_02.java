@@ -94,13 +94,9 @@ Internal Working:
 - Hash Table + Doubly Linked List
 
 Methods:
-put()
-get()
-remove()
-containsKey()
-containsValue()
-keySet()
-values()
+All methods of Map
+Own methods: removeEldestEntry()
+
 
 Time Complexity:
 put()         -> O(1)

@@ -57,11 +57,7 @@ Internal Working:
 - Hash Table
 
 Methods:
-add()
-remove()
-contains()
-size()
-clear()
+it uses common methods from Collection..
 
 Time Complexity:
 add      -> O(1)
@@ -72,4 +68,20 @@ Applications:
 - Removing duplicates
 - Fast lookup/search
 - Membership checking
+
+-------------------------------------------------------------
+
+| Feature          | HashSet         |               LinkedHashSet | TreeSet     |
+| ---------------- | --------------- | --------------------------- | ------------------ |
+| Order            | No order        | Insertion order maintained  | Sorted order       |
+| Internal Working | Hash Table      | Hash Table + Linked List    | Red-Black Tree     |
+| Time Complexity  | O(1)            | O(1)                        | O(log n)           |
+| Null Values      | One allowed     | One allowed                 | Not allowed        |
+| Duplicate Values | Not allowed     | Not allowed                 | Not allowed        |
+| Sorting          | No              | No                          | Yes                |
+| Faster           | Fastest         | Slightly slower             | Slowest            |
+| Implements       | Set             | Set                         | NavigableSet       |
+| Special Method   | No own method   | No own method               | No own method      |
+| Best Use         | Fast storage    | Ordered unique data         | Sorted unique data |
+
  */
