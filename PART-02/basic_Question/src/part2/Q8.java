@@ -14,22 +14,14 @@ public class Q8 {
 }
 
 /*
-factors means a divisor
-🔍 For 20:
 
-Start checking from 1 upward:
+| Iteration | Condition `num != 0`  | rem = num % 10 | finalRes *= rem | finalRes  | num = num / 10 |
+| --------- | --------------------  | -------------- | ----------      | ---       | -------------- |
+| 1         | `1234 != 0` ✔         | 4              | 1 * 4           | 4         | 123             |
+| 2         | `123 != 0` ✔          | 3              | 4 * 3           | 12         | 12              |
+| 3         | `12 != 0` ✔           | 2              | 12 * 2           | 24         | 1              |
+| 4         | `1 != 0` ✔            | 1              | 24 * 1           | 24         | 0              |
+| 5         | `0 != 0` ✘            | loop stops     | —               | —         | —              |
 
-1 → 20 ÷ 1 = 20 → pair: (1, 20)
-2 → 20 ÷ 2 = 10 → pair: (2, 10)
-3 → not divisible
-4 → 20 ÷ 4 = 5 → pair: (4, 5)
 
-Now you reached √20 ≈ 4.47 → stop here
-
-Factor → any divisor
-Prime Factor → only prime numbers that multiply to give the number
-
-Example factor of 18 => 1,2,3,6,9,18
-        prime factor of 18 => 2,3,3
-        => 2 X 3 X 3 = 18
 */

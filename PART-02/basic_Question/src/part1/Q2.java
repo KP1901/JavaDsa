@@ -4,16 +4,23 @@ public class Q2 {
 
 	public static void main(String[] args) {
 
-
 		int n = 12;
+
+		if (n <= 1) {
+			System.out.println("not prime");
+			return;
+		}
+
 		boolean isPrime = true;
 
-		for (int i = 2; i <= Math.sqrt(n); i++) {
+		for (int i = 2; i * i <= n; i++) {
+
 			if (n % i == 0) {
 				isPrime = false;
 				break;
 			}
 		}
+
 		if (isPrime) {
 			System.out.println("this is prime");
 		} else {
@@ -139,53 +146,19 @@ Factor Pair Observation Pattern
 
 Initial:
 
-n = 7
+n = 12
 isPrime = true
+√12 = 3.46
 
-
-Loop:
-for (int i = 2; i <= Math.sqrt(n); i++)
-
-√7 = 2.64
-
-
------------------------------------
-
-Iteration 1:
-
-i = 2
-
-Condition:
-2 <= 2.64 → true
-
-Check:
-7 % 2 == 0
-
-Result:
-1 == 0 → false
-
-So:
-isPrime remains true
-
-
------------------------------------
-
-Next Iteration:
-
-i = 3
-
-Condition:
-3 <= 2.64 → false
-
-Loop stops
-
-
------------------------------------
+| Iteration | i | Condition `i * i <= n` | `n % i`      | `n % i == 0` | isPrime | Action |
+| --------- | - | ---------------------- | ------------ | ------------ | ------- | ------ |
+| 1         | 2 | `2 * 2 <= 12` ✔        | `12 % 2 = 0` | ✔ True       | false   | break  |
+| 2         | — | loop stopped           | —            | —            | —       | —      |
 
 Final:
 
-isPrime = true
+isPrime = false
 
 Output:
-this is prime
+this is not prime
  */

@@ -305,4 +305,49 @@ d = 3
 
 O(d²)= O(3²) = 9 operations (approx)
 O(d) = O(3) =3 opeations (approx)
+---------------------------------------------
+
+Initial Values:
+
+n = 1634
+temp1 = 1634
+original = 1634
+
+count = 0
+sum = 0
+
+Step 1 : Count Digits
+
+| Iteration | Condition `n != 0` | count++    | count | n = n / 10 |
+| --------- | ------------------ | ---------- | ----- | ---------- |
+| 1         | `1634 != 0` ✔      | ✔          | 1     | 163        |
+| 2         | `163 != 0` ✔       | ✔          | 2     | 16         |
+| 3         | `16 != 0` ✔        | ✔          | 3     | 1          |
+| 4         | `1 != 0` ✔         | ✔          | 4     | 0          |
+| 5         | `0 != 0` ✘         | loop stops | —     | —          |
+
+Final:
+
+count = 4
+
+Step 2 : Armstrong Calculation
+
+Each digit is raised to power 4.
+
+| Iteration | temp1 | rem = temp1 % 10 | rem^4 | sum = sum + cube | sum  | temp1 = temp1 / 10 |
+| --------- | ----- | ---------------- | ----- | ---------------- | ---- | ------------------ |
+| 1         | 1634  | 4                | 256   | 0 + 256          | 256  | 163                |
+| 2         | 163   | 3                | 81    | 256 + 81         | 337  | 16                 |
+| 3         | 16    | 6                | 1296  | 337 + 1296       | 1633 | 1                  |
+| 4         | 1     | 1                | 1     | 1633 + 1         | 1634 | 0                  |
+| 5         | 0     | loop stops       | —     | —                | —    | —                  |
+
+| Condition         | Result           |
+| ----------------- | ---------------- |
+| `sum == original` | `1634 == 1634` ✔ |
+| Output            | `Armstrong`      |
+
+Complexity
+Tc : O(d)
+Sc : O(1)
 */

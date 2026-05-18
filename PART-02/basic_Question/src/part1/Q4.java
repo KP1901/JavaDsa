@@ -34,81 +34,14 @@ Initial:
 num = 5
 fact = 1
 
-
-FOR LOOP
---------
-for(int i = 1; i <= num; i++)
-
-
-ITERATION 1
------------
-
-i = 1
-
-fact = fact * i
-     = 1 * 1
-     = 1
-
-After Iteration 1:
-fact = 1
-
-
-ITERATION 2
------------
-
-i = 2
-
-fact = fact * i
-     = 1 * 2
-     = 2
-
-After Iteration 2:
-fact = 2
-
-
-ITERATION 3
------------
-
-i = 3
-
-fact = fact * i
-     = 2 * 3
-     = 6
-
-After Iteration 3:
-fact = 6
-
-
-ITERATION 4
------------
-
-i = 4
-
-fact = fact * i
-     = 6 * 4
-     = 24
-
-After Iteration 4:
-fact = 24
-
-
-ITERATION 5
------------
-
-i = 5
-
-fact = fact * i
-     = 24 * 5
-     = 120
-
-After Iteration 5:
-fact = 120
-
-
-LOOP ENDS
----------
-i = 6
-6 <= 5 -> FALSE
+| Iteration | i | Condition `i <= num` | fact = fact * i | fact |
+| --------- | - | -------------------- | --------------- | ---- |
+| 1         | 1 | `1 <= 5` ✔           | `1 * 1`         | 1    |
+| 2         | 2 | `2 <= 5` ✔           | `1 * 2`         | 2    |
+| 3         | 3 | `3 <= 5` ✔           | `2 * 3`         | 6    |
+| 4         | 4 | `4 <= 5` ✔           | `6 * 4`         | 24   |
+| 5         | 5 | `5 <= 5` ✔           | `24 * 5`        | 120  |
+| 6         | 6 | `6 <= 5` ✘           | loop stops      | —    |
 
 
 OUTPUT
