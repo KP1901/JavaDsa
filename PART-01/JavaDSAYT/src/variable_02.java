@@ -13,7 +13,7 @@ public class variable_02 {
 		System.out.println(score);
 
 		//case sensitive
-		String name = "kiran";
+		String name = "kran";
 		String Name = "ajit";
 		System.out.println(name);
 		System.out.println(Name);
