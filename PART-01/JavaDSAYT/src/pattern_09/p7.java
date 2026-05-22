@@ -1,4 +1,8 @@
-public class pr {
+package pattern_09;
+
+// fibonacci pattern
+
+public class p7 {
 	public static void main(String[] args) {
 
 		int n = 5;
