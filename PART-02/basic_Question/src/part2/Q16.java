@@ -42,7 +42,6 @@ idea :
 - when square becomes greater than n,
   current value is approximate square root
 
-algorithm :
 
 Algorithm:
 
@@ -73,4 +72,13 @@ Algorithm:
 TC : TC=O(log n + 1000 (3 precision)
 
 SC : O(1)
+
+| Iteration | Condition (i <= high) | low | high | mid = (low + high)/2 | mid * mid | Action               | ans |
+| --------- | --------------------- | --- | ---- | -------------------- | --------- | -------------------- | --- |
+| 1         | 1 <= 25 → True        | 1   | 25   | 13                   | 169       | 169 > 25 → high = 12 | 0   |
+| 2         | 2 <= 12 → True        | 1   | 12   | 6                    | 36        | 36 > 25 → high = 5   | 0   |
+| 3         | 3 <= 5 → True         | 1   | 5    | 3                    | 9         | 9 < 25 → low = 4     | 3   |
+| 4         | 4 <= 5 → True         | 4   | 5    | 4                    | 16        | 16 < 25 → low = 5    | 4   |
+| 5         | 5 <= 5 → True         | 5   | 5    | 5                    | 25        | Perfect square found | 5   |
+
  */

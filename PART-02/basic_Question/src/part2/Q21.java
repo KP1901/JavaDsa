@@ -16,3 +16,44 @@ public class Q21 {
 		System.out.println(countOddDigit);
 	}
 }
+/*
+Idea:
+- take a number
+- extract each digit
+- check whether digit is not divisible by 2
+- if yes, increase count
+- otherwise ignore it
+- after checking all digits,
+  print total odd digits
+
+
+Algorithm:
+1. Initialize count as 0
+2. Extract digits one by one
+3. Check divisibility not by 2
+4. Increase count if odd
+5. Remove last digit
+6. Repeat until number becomes 0
+7. Print count
+
+Complexity
+
+TC :
+O(log_10 n)
+
+SC :
+O(1)
+--------------------------------------------------------------------------------------------
+
+num = 2687
+countOddDigit = 0
+
+| Iteration | Condition (num != 0) | num  | rem = num % 10 | rem % 2 != 0 | countOddDigit | num = num / 10 |
+| --------- | -------------------- | ---- | -------------- | ------------ | ------------- | -------------- |
+| 1         | 2687 != 0 → True     | 2687 | 7              | Yes          | 1             | 268            |
+| 2         | 268 != 0 → True      | 268  | 8              | No           | 1             | 26             |
+| 3         | 26 != 0 → True       | 26   | 6              | No           | 1             | 2              |
+| 4         | 2 != 0 → True        | 2    | 2              | No           | 1             | 0              |
+| 5         | 0 != 0 → False       | -    | -              | -            | -             | -              |
+
+ */

@@ -1,17 +1,28 @@
+class Studen {
+	static int count = 0;
+	String name;
+}
 
 
 public class pr {
+	static int count = 0;
+	String name;
 
-	public static int add(int a, int b) {
-		return a + b;
+	void greet() {
+		int age = 30; // local variable
 	}
 
-	public static int add(int a, int b, int c) {
-		return a + b + c;
-	}
+	static void main(String[] args) {
+		System.out.println(count);
 
-	static void main() {
-		int result = add(10, 20, 30);
-		System.out.println(result);
+		pr p1 = new pr();
+		p1.name = "ajit";
+		System.out.println(p1.name);
+		System.out.println(p1.count);
+
+		pr p2 = new pr();
+		p2.name = "kiran";
+		System.out.println(p2.name);
+		System.out.println(p2.count);
 	}
 }

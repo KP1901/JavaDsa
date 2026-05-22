@@ -6,7 +6,7 @@ class Student {
 public class variable_03 {
 
 	static int a = 20;
-	int b = 50;
+	int b;
 
 	void greet() {
 		int num = 1; // local variable
@@ -40,9 +40,11 @@ If you mean outside the class (in another class), then:
 -static members → access using ClassName
 -non-static members → create object of that class
 
-
 If you mean inside the class, then:
 static members → can be accessed directly
 non-static members → need object creation
+
+-static variable declare and initialize once so every object have same copy
+-instance variable declare only not initialize so every object have different copy
 
 */
