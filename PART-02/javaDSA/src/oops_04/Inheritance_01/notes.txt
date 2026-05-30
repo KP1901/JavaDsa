@@ -1,0 +1,100 @@
+================ JAVA INHERITANCE — ONE PAGE NOTES ================
+
+What is Inheritance?
+→ Inheritance means reusing properties and methods of another class.
+
+Purpose:
+• Code Reusability
+• Reduce duplicate code
+• Create relationships between classes
+
+Keyword Used:
+• extends
+
+Terminology:
+• Parent Class  = Superclass / Base Class
+• Child Class   = Subclass / Derived Class
+
+Relationship Rule:
+Inheritance follows an "IS-A" relationship.
+
+Examples:
+• Dog IS-A Animal ✅
+• Car IS-A Vehicle ✅
+
+If relation is not IS-A, inheritance may be wrong.
+
+---------------------------------------------------
+
+Important Rules:
+
+• Child class inherits parent variables and methods
+• Java supports single inheritance for classes
+  → One child can extend only one parent class
+• Java does NOT support multiple inheritance with classes
+• Multiple inheritance is possible using interfaces
+• Private members are NOT directly accessible in child classes
+
+---------------------------------------------------
+
+Constructor Rule:
+
+Parent Constructor runs first
+↓
+Child Constructor runs second
+
+---------------------------------------------------
+
+super Keyword Uses:
+
+• Call parent constructor
+• Access parent methods
+• Access parent variables
+
+---------------------------------------------------
+
+Child Class Can:
+
+• Use parent methods
+• Add new methods
+• Override parent methods
+
+---------------------------------------------------
+
+Method Overriding:
+
+Rules:
+• Same method name
+• Same parameters
+• Different implementation in child class
+
+Used for:
+• Runtime Polymorphism
+
+---------------------------------------------------
+
+Types of Inheritance:
+
+• Single        ✅
+• Multilevel    ✅
+• Hierarchical  ✅
+• Multiple      ❌ (classes)
+• Hybrid        ❌ (classes)
+
+---------------------------------------------------
+
+Quick Formula:
+
+Inheritance = IS-A + extends + Reuse + Override
+
+Most Important for Coding:
+
+1. extends keyword
+2. IS-A relationship
+3. super keyword
+4. Constructor order
+5. Method overriding
+6. Private access rule
+7. Single inheritance limitation
+
+===================================================

@@ -1,0 +1,170 @@
+=========== NORMAL CLASS vs ABSTRACT CLASS vs INTERFACE ===========
+
+1) NORMAL CLASS
+
+What is it?
+
+→ A complete class with full implementation.
+
+Can create object?
+✅ Yes
+
+Can have constructors?
+✅ Yes
+
+Can have normal methods?
+✅ Yes
+
+Can have abstract methods?
+❌ No
+
+Inheritance Keyword:
+• extends
+
+Purpose:
+• Create actual objects
+• Store implementation
+
+Example Thinking:
+
+Car car = new Car();
+
+---------------------------------------------------
+
+2) ABSTRACT CLASS
+
+What is it?
+
+→ A partially complete class.
+
+Can have BOTH:
+
+• implemented methods
+• abstract methods
+
+Can create object?
+❌ No
+
+Can have constructors?
+✅ Yes
+
+Can have normal methods?
+✅ Yes
+
+Can have abstract methods?
+✅ Yes
+
+Keyword:
+• abstract class
+
+Inheritance Keyword:
+• extends
+
+Purpose:
+
+• Share common code
+• Force child classes to complete missing parts
+
+Example Thinking:
+
+Animal class provides:
+
+eat()  → already defined
+sound() → child must define
+
+---------------------------------------------------
+
+3) INTERFACE
+
+What is it?
+
+→ A contract / rules for classes.
+
+Can create object?
+❌ No
+
+Can have constructors?
+❌ No
+
+Can have normal methods?
+(Largely no traditionally)
+
+Can have abstract methods?
+✅ Yes
+
+Keyword:
+• interface
+
+Usage Keyword:
+• implements
+
+Purpose:
+
+• Define rules
+• Multiple inheritance
+• Loose coupling
+• Runtime polymorphism
+
+Example Thinking:
+
+Payment Interface:
+
+pay()
+
+Classes:
+
+UPI
+Card
+Cash
+
+Each implements differently
+
+---------------------------------------------------
+
+QUICK COMPARISON
+
+Normal Class:
+
+• Complete blueprint
+• Create objects
+• Full implementation
+
+Abstract Class:
+
+• Partial blueprint
+• Shared code + rules
+• Cannot instantiate
+
+Interface:
+
+• Rules / contract only
+• Multiple inheritance
+• Cannot instantiate
+
+---------------------------------------------------
+
+WHEN TO USE WHAT?
+
+Use Normal Class:
+→ When object creation is needed
+
+Use Abstract Class:
+→ When classes share common code
+
+Use Interface:
+→ When classes only need common rules
+
+---------------------------------------------------
+
+MEMORY TRICK:
+
+Normal Class
+= FULL implementation
+
+Abstract Class
+= PARTIAL implementation
+
+Interface
+= RULES / CONTRACT
+
+====================================================

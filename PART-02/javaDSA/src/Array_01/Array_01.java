@@ -7,11 +7,11 @@ public class Array_01 {
 
 		Scanner sc = new Scanner(System.in);
 
-		// declaration + initialization
+		// declaration + initialization (implicit / use here only)
 
 		int arr[] = {1, 2, 3};
 
-		// using new keyword
+		// using new keyword (explicit / use anywhere )
 
 		int ar1[] = new int[]{10, 20, 30};
 

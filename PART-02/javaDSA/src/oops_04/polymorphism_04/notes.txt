@@ -1,0 +1,168 @@
+================ JAVA POLYMORPHISM — ONE PAGE NOTES ================
+
+What is Polymorphism?
+
+→ Polymorphism means "Many Forms"
+
+Same method name can behave differently in different situations.
+
+Purpose:
+
+• Flexibility
+• Code Reusability
+• Loose Coupling
+• Runtime Decision Making
+
+---------------------------------------------------
+
+Types of Polymorphism:
+
+1. Compile Time Polymorphism (Static Binding)
+   → Method Overloading
+
+2. Runtime Polymorphism (Dynamic Binding)
+   → Method Overriding
+
+---------------------------------------------------
+
+1) Method Overloading (Compile Time)
+
+Definition:
+
+Same method name
++ Different parameters
+
+Rules:
+
+• Different number of parameters OR
+• Different datatype of parameters
+
+NOT Valid:
+
+Only changing return type ❌
+
+Example Idea:
+
+sum(int a, int b)
+sum(int a, int b, int c)
+
+Compiler decides which method to call.
+
+---------------------------------------------------
+
+2) Method Overriding (Runtime)
+
+Definition:
+
+Child class provides its own implementation
+for parent method.
+
+Rules:
+
+• Same method name
+• Same parameters
+• Inheritance required
+• Parent method overridden in child class
+
+Runtime decides which method executes.
+
+---------------------------------------------------
+
+Important Concepts:
+
+Upcasting:
+
+Parent ref = Child object
+
+Why?
+
+• Achieve runtime polymorphism
+• Generalized coding
+
+Example Idea:
+
+Animal a = new Dog();
+
+Reference type:
+Parent
+
+Object type:
+Child
+
+---------------------------------------------------
+
+Dynamic Method Dispatch:
+
+Method call decided using OBJECT type,
+not reference type.
+
+Example:
+
+Animal a = new Dog();
+
+a.sound();
+
+Dog method runs at runtime.
+
+---------------------------------------------------
+
+Methods That Cannot Be Overridden:
+
+• static methods
+• final methods
+• private methods
+• constructors
+
+---------------------------------------------------
+
+Polymorphism Works Mostly With:
+
+• Inheritance
+• Method Overriding
+• Interfaces
+
+---------------------------------------------------
+
+Advantages:
+
+• Flexible code
+• Easy maintenance
+• Reusable code
+• Extensible systems
+
+---------------------------------------------------
+
+Quick Formula:
+
+Polymorphism
+=
+One Interface
++
+Multiple Behaviors
+
+---------------------------------------------------
+
+Most Important for Coding:
+
+1. Method Overloading
+2. Method Overriding
+3. Upcasting
+4. Runtime Polymorphism
+5. Dynamic Method Dispatch
+6. Parent ref = Child object
+7. Overriding rules
+
+====================================================
+
+/*
+Rules
+
+1. Child class must inherit parent class
+2. Method name must be same
+3. Parameters must be same
+4. Return type must be same or compatible
+5. Access modifier cannot be more restrictive
+6. Use @Override (recommended)
+7. Constructors are NOT overridden (can have any length of parameter)
+
+ */

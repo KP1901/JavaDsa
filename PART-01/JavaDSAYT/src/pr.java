@@ -1,27 +1,17 @@
 public class pr {
+
+	public static int add(int a, int b) {
+		return a + b;
+	}
+
+	public static int add(int a, int b, int c) {
+		return a + b + c;
+	}
+
 	public static void main(String[] args) {
 
-		int n = 5;
+		System.out.println(add(10, 20));
+		System.out.println(add(10, 20, 30));
 
-		int a = 0;
-		int b = 1;
-
-		System.out.println("* ");
-
-		for (int i = 1; i <= n; i++) {
-
-			int c = a + b;
-
-			for (int j = 1; j <= c; j++) {
-				System.out.print("* ");
-
-			}
-			a = b;
-			b = c;
-
-			System.out.println();
-
-
-		}
 	}
 }

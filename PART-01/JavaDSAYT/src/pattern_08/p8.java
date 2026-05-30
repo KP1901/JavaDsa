@@ -26,7 +26,7 @@ public class p8 {
 			} else {
 				System.out.print("* ");
 				for (int col = 1; col <= row - 2; col++) {
-					System.out.print("  ");
+					System.out.print("_ ");
 				}
 				System.out.print("* ");
 			}

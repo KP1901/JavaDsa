@@ -1,0 +1,141 @@
+================ JAVA INTERFACE — ONE PAGE NOTES ================
+
+What is Interface?
+
+→ Interface is a blueprint / contract that tells
+classes WHAT to do, not HOW to do it.
+
+Purpose:
+
+• Achieve Abstraction
+• Create Contracts/Rules
+• Support Multiple Inheritance
+• Enable Runtime Polymorphism
+• Loose Coupling
+
+---------------------------------------------------
+
+Keyword Used:
+
+• interface     → create interface
+• implements    → class uses interface
+• extends       → interface inherits interface
+
+---------------------------------------------------
+
+Important Rules:
+
+• Cannot create object of interface directly
+
+• Class implementing interface must provide
+  implementation of methods
+
+• One class can implement multiple interfaces
+
+• Interface can extend another interface
+
+• Interface constructors do NOT exist
+
+---------------------------------------------------
+
+Default Properties:
+
+Variables inside interface are by default:
+
+public static final
+
+(Meaning: constants)
+
+Methods inside interface are by default:
+
+public abstract
+
+(Traditional interface methods)
+
+---------------------------------------------------
+
+Relationship Formula:
+
+Class + extends
+→ Class Inheritance
+
+Class + implements
+→ Using Interface
+
+Interface + extends
+→ Interface Inheritance
+
+---------------------------------------------------
+
+Why Use Interfaces?
+
+• Common rules for classes
+• Multiple inheritance support
+• Flexible design
+• Reusable code
+• Runtime polymorphism
+
+---------------------------------------------------
+
+Example Idea:
+
+Interface says:
+
+"Payment should have pay()"
+
+Classes implement differently:
+
+• Card Payment
+• UPI Payment
+• Cash Payment
+
+Same Rule
++
+Different Behavior
+=
+Polymorphism
+
+---------------------------------------------------
+
+Interface vs Class:
+
+Interface:
+• What to do
+• Rules / Contract
+
+Class:
+• How to do
+• Actual implementation
+
+---------------------------------------------------
+
+Quick Formula:
+
+Interface
+=
+Contract
++
+Abstraction
++
+Multiple Inheritance
++
+Polymorphism
+
+---------------------------------------------------
+
+Most Important for Coding:
+
+1. interface keyword
+2. implements keyword
+3. Multiple inheritance support
+4. Cannot instantiate interface
+5. Contract concept
+6. Runtime polymorphism
+7. Abstraction
+
+====================================================
+
+IMP :
+
+-Reference type decides what you CAN ACCESS
+-Object type decides what IMPLEMENTATION RUNS
