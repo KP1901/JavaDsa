@@ -2,10 +2,8 @@ package ops;
 
 public class Main {
 	public static void main(String[] args) {
-
-		Animal animal = new Dog();
-		animal.eat();
-		animal.sleep();
-
+		Bank b1 = new Bank();
+		b1.setBalance(2000);
+		System.out.println(b1.getBalance());
 	}
 }

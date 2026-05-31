@@ -1,34 +1,5 @@
 package oops_04.Abstraction_08;
 
-interface Bird {
-	void fly();
-
-	void eat();
-
-}
-
-class Sparrow implements Bird {
-	public void fly() {
-		System.out.println("Sparrow Flying");
-	}
-
-	public void eat() {
-		System.out.println("Sparrow Eating");
-
-	}
-}
-
-
-class Crow implements Bird {
-	public void fly() {
-		System.out.println("Crow Flying");
-	}
-
-	public void eat() {
-		System.out.println("Crow Eating");
-	}
-}
-
 
 public class Main {
 

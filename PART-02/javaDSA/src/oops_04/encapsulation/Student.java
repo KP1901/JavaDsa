@@ -31,6 +31,14 @@ public class Student {
 for perfect encapsulation we use a getter and settter so we can access data outside world
 access through layer(methods)
 
-encapsulation - bind all attribute and behaviour in one entity so outer world cant access
-data directly
+Encapsulation:
+
+1. Bind data (attributes) + behavior (methods) together in one class.
+
+2. Hide data using private access modifier.
+
+3. Provide controlled access using methods (getter/setter/constructor).
+
+4. Constructor does NOT break encapsulation.
+   It is just a controlled way to initialize object data.
 */
