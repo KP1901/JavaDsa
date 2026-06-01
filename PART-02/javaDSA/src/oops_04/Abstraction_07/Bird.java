@@ -9,3 +9,12 @@ abstract class Bird {
 		System.out.println("Hello");
 	}
 }
+
+/*
+We use the parent class reference/interface (abstraction), while the actual
+implementation is provided by the child class and hidden from the user.
+
+Bird → rules / contract
+Sparrow → implementation
+User → uses Bird reference without caring about details
+ */

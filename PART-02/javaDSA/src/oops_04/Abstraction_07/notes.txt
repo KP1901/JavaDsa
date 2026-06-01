@@ -1,0 +1,314 @@
+ABSTRACTION IN JAVA – QUICK NOTES
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+What is Abstraction?
+
+Abstraction means:
+
+"Hiding implementation details and showing only essential features to the user."
+
+It is one of the main pillars of OOP (Object-Oriented Programming).
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Real-Life Example
+
+Car Example:
+
+You press accelerator
+Car moves
+
+You press brake
+Car stops
+
+But you do NOT know:
+
+How engine works
+How fuel burns
+How gears internally work
+
+Same in Java:
+
+Users use methods
+
+But internal implementation remains hidden
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Main Idea → Hiding Complexity
+
+We hide unnecessary implementation details.
+
+Example:
+
+abstract class Animal {
+
+```
+abstract void sound();
+```
+
+}
+
+User only knows:
+
+animal.sound();
+
+Not how sound is implemented internally.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+How Abstraction is Achieved
+
+Using:
+
+Abstract Classes
+
+Interfaces
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Abstract Class Example
+
+abstract class Animal {
+
+```
+abstract void sound();
+```
+
+}
+
+class Dog extends Animal {
+
+```
+void sound() {
+    System.out.println("Bark");
+}
+```
+
+}
+
+Usage:
+
+public class App {
+
+```
+public static void main(String[] args) {
+
+    Dog d = new Dog();
+
+    d.sound();
+}
+```
+
+}
+
+Output:
+
+Bark
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Interface Example
+
+interface Vehicle {
+
+```
+void start();
+```
+
+}
+
+class Car implements Vehicle {
+
+```
+public void start() {
+
+    System.out.println("Car Started");
+}
+```
+
+}
+
+Usage:
+
+Car c = new Car();
+
+c.start();
+
+Output:
+
+Car Started
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Why Use Abstraction?
+
+Hide Complexity
+
+Users focus only on usage.
+
+Example:
+
+car.start();
+
+No need to know internal engine logic.
+
+Security
+
+Internal implementation remains hidden.
+
+Better Maintenance
+
+Internal changes do not affect users.
+
+Code Reusability
+
+Common behavior can be reused.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Important Keywords
+
+abstract
+
+→ Used for abstract classes and methods
+
+interface
+
+→ Used to achieve abstraction
+
+implements
+
+→ Used to implement interfaces
+
+extends
+
+→ Used to inherit abstract classes
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Abstract Method Rules
+
+Abstract methods:
+
+Do NOT have body
+
+Must be overridden
+
+Example:
+
+abstract void show();
+
+Wrong:
+
+abstract void show() {
+
+}
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Abstract Class Rules
+
+✔ Can have abstract methods
+
+✔ Can have normal methods
+
+✔ Cannot create object directly
+
+Wrong:
+
+Animal a = new Animal();
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Abstraction Formula
+
+Hide Implementation + Show Essential Features = Abstraction
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Full Example
+
+abstract class Payment {
+
+```
+abstract void pay();
+```
+
+}
+
+class UPI extends Payment {
+
+```
+void pay() {
+
+    System.out.println("Payment Done");
+}
+```
+
+}
+
+public class App {
+
+```
+public static void main(String[] args) {
+
+    Payment p = new UPI();
+
+    p.pay();
+}
+```
+
+}
+
+Output:
+
+Payment Done
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Abstraction vs Encapsulation
+
+Abstraction:
+
+Hides implementation
+
+Focus on simplicity
+
+Uses abstract classes/interfaces
+
+Encapsulation:
+
+Hides data
+
+Focus on security
+
+Uses private variables
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Is Abstraction Only About Abstract Classes?
+
+No.
+
+It is about:
+
+Hiding complexity
+Exposing only required functionality
+Keeping implementation hidden
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Best Practices
+
+✔ Keep only necessary methods public
+✔ Prefer interfaces when possible
+✔ Hide unnecessary implementation
+✔ Use abstraction for common behavior
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+One-Line Definition
+
+"Abstraction is the process of hiding implementation details and showing only essential functionality."

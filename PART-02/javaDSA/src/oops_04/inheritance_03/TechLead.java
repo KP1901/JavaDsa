@@ -32,6 +32,8 @@ public class TechLead extends Empolyee implements ProjectManager, TeamLead {
 		System.out.println("Project magnage mangaging Project" + projectManaged);
 	}
 
+
+	@Override
 	public void leadTeam() {
 		System.out.println("Team lead leading a team of " + teamSize + " members.");
 	}
