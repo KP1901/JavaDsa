@@ -242,4 +242,14 @@ LinkedList uses links/nodes
 | Frequent middle insertion/removal | ✅               |
 | Fast indexing needed              | ❌               |
 
+| Operation                  | Time |
+| -------------------------- | ---- |
+| Add First                  | O(1) |
+| Remove First               | O(1) |
+| Add Last                   | O(1) |
+| Remove Last                | O(1) |
+| Access by Index (`get(i)`) | O(n) |
+| Search                     | O(n) |
+
+
 */

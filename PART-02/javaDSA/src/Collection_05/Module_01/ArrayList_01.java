@@ -169,7 +169,6 @@ subList()
 replaceAll()
 sort()
 
-
 Time Complexity:
 Access -> Depends on implementation
 
@@ -225,5 +224,37 @@ Applications:
 | Append at end                      | ✅              |
 | Insert/remove in middle frequently | ❌              |
 
+
+| Operation                      | Time             |
+| ------------------------------ | ---------------- |
+| Add Last (`add()`)             | O(1) *amortized* |
+| Remove Last                    | O(1)             |
+| Add First                      | O(n)             |
+| Remove First                   | O(n)             |
+| Access by Index (`get(i)`)     | O(1)             |
+| Search (`contains`, `indexOf`) | O(n)             |
+| Insert at Middle               | O(n)             |
+| Remove from Middle             | O(n)             |
+
+Use ArrayList when:
+
+✅ Frequent random access (get(index))
+
+✅ More reading than modifying
+
+✅ Need fast access to any position
+
+list.get(500);
+
+Fast → O(1)
+
+Use LinkedList when:
+
+✅ Frequent insertions/deletions at the beginning or when you already have the node position
+
+addFirst();
+removeFirst();
+
+Fast → O(1)
 
  */

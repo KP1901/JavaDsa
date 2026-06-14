@@ -1,0 +1,105 @@
+===============================
+QUEUE vs STACK vs DEQUE (Java)
+===============================
+
+1. Behavior Rules
+
+Queue  = FIFO (First In First Out)
+Stack  = LIFO (Last In First Out)
+Deque  = Supports BOTH FIFO + LIFO
+
+Memory Trick:
+
+Queue → Line of people 🍔
+Stack → Stack of books 📚
+Deque → Work from both ends ↔️
+
+
+--------------------------------
+2. Important Methods
+--------------------------------
+
+QUEUE (FIFO)
+
+offer() → Add at back
+poll()  → Remove from front
+peek()  → View front element
+
+Flow:
+
+Front ← remove(poll)
+[10, 20, 30]
+        ↑ add(offer)
+Back
+
+
+STACK (LIFO)
+
+push() → Add on top
+pop()  → Remove from top
+peek() → View top element
+
+Flow:
+
+Top
+30 ← removed first
+20
+10
+
+
+DEQUE (Double Ended Queue)
+
+addFirst()
+addLast()
+
+removeFirst()
+removeLast()
+
+peekFirst()
+peekLast()
+
+Flow:
+
+Front ↔ Back
+
+Can act like:
+✓ Queue (FIFO)
+✓ Stack (LIFO)
+
+
+--------------------------------
+3. LinkedList Relation
+--------------------------------
+
+LinkedList implements:
+
+- List
+- Queue
+- Deque
+
+So LinkedList can behave as:
+
+Queue → offer(), poll()
+Stack → push(), pop()
+Deque → addFirst(), addLast()
+
+Important:
+
+LinkedList = Data Structure
+Queue/Deque = Interfaces (rules/behavior)
+
+
+--------------------------------
+4. Quick Revision
+--------------------------------
+
+Queue  → FIFO → offer / poll / peek
+
+Stack  → LIFO → push / pop / peek
+
+Deque  → Both → First / Last methods
+
+Rule:
+
+Understand behavior first,
+memorize methods second.
