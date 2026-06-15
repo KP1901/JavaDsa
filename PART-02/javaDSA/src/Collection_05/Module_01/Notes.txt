@@ -103,3 +103,12 @@ Rule:
 
 Understand behavior first,
 memorize methods second.
+
+----------------------------------------------------------
+
+RULES TO REMEBER :
+
+Need a List?   -> ArrayList
+Need a Stack?  -> ArrayDeque (via Deque)
+Need a Queue?  -> LinkedList (or ArrayDeque)
+Need a Deque?  -> ArrayDeque

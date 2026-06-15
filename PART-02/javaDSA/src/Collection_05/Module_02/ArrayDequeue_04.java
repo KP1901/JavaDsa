@@ -106,4 +106,16 @@ No nodes or pointers.
 
 NOTE : LinkedList and ArrayDeque support almost the same
  deque operations because both implement Deque.
+
+ ---------------------------------------------
+
+ ArrayDeque:
+- Implements Deque
+- Dynamic array internally
+- Can be used as Stack
+- Can be used as Queue
+- Usually faster than Stack and LinkedList
+
+Create:
+Deque<Integer> dq = new ArrayDeque<>();
 */

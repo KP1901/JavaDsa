@@ -251,5 +251,9 @@ LinkedList uses links/nodes
 | Access by Index (`get(i)`) | O(n) |
 | Search                     | O(n) |
 
-
+LinkedList can work as:
+✓ List
+✓ Queue
+✓ Deque
+✓ Stack (via Deque methods)
 */

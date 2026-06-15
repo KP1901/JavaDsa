@@ -5,23 +5,39 @@ import java.util.*;
 public class Pr {
 	public static void main(String[] args) {
 
+		Deque<Integer> d = new ArrayDeque<>();
 
-		LinkedList<Integer> list = new LinkedList<>();
-		list.add(10);
-		list.add(20);
-		list.add(30);
+		d.add(10);
+		d.add(20);
+		d.add(30);
+		d.add(40);
 
-		list.addFirst(100);
-		System.out.println(list);
 
-		list.addLast(200);
-		System.out.println(list);
+//		queue
 
-		list.removeFirst();
-		System.out.println(list);
+//		enter
+		d.addFirst(100);
+		d.addFirst(200);
 
-		list.removeLast();
-		System.out.println(list);
+		System.out.println(d);
+
+//		remove
+		d.removeFirst();
+		System.out.println(d);
+
+//		stack
+
+//		add
+		d.addLast(400);
+		d.addLast(300);
+		System.out.println(d);
+
+//		remove
+		d.removeLast();
+		System.out.println(d);
+
+		System.out.println(d.peekFirst());
+		System.out.println(d.peekLast());
 
 	}
 }

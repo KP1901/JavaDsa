@@ -182,7 +182,7 @@ Methods:
 push() -> insert at end
 pop() -> remove from end
 peek() -> view from top
-search() -> find the position of element from top
+search() -> find the position of element from top (1  based)
 
 Time Complexity:
 push -> O(1)
@@ -210,4 +210,7 @@ Applications:
 | Special Method       | ensureCapacity(), trimToSize() | addFirst(), addLast()                | capacity()             |
 | Best Use             | Fast access                    | Frequent modifications               | Thread-safe operations |
 
+Interview Definition
+
+A Stack is a linear data structure that follows the LIFO (Last In, First Out) principle, where insertion and deletion happen only at the top
  */

@@ -1,0 +1,139 @@
+QUEUE, STACK, DEQUE, ARRAYDEQUE
+
+1. Queue
+- Interface
+- Follows FIFO (First In First Out)
+- First inserted element is removed first
+
+Example:
+Queue<Integer> q = new LinkedList<>();
+
+Main Methods:
+offer() -> insert
+poll()  -> remove front
+peek()  -> view front
+
+----------------------------------------
+
+2. Stack
+- Class
+- Follows LIFO (Last In First Out)
+- Last inserted element is removed first
+
+Example:
+Stack<Integer> stack = new Stack<>();
+
+Main Methods:
+push() -> insert
+pop()  -> remove top
+peek() -> view top
+
+----------------------------------------
+
+3. Deque (Double Ended Queue)
+- Interface
+- Allows insertion/removal from both ends
+- Can behave as both Queue and Stack
+
+Example:
+Deque<Integer> dq;
+
+Main Methods:
+addFirst()
+addLast()
+removeFirst()
+removeLast()
+
+----------------------------------------
+
+4. ArrayDeque
+- Class
+- Implements Deque
+- Uses a dynamic array internally
+- Can be used as Queue or Stack
+- Preferred in modern Java
+
+Example:
+Deque<Integer> dq = new ArrayDeque<>();
+
+Queue Style:
+offer()
+poll()
+peek()
+
+Stack Style:
+push()
+pop()
+peek()
+
+----------------------------------------
+
+Hierarchy:
+
+Collection
+   │
+   └── Queue (Interface)
+          │
+          └── Deque (Interface)
+                 │
+                 ├── ArrayDeque
+                 └── LinkedList
+
+Stack (Class)
+   │
+   └── extends Vector
+
+----------------------------------------
+
+Memory Trick:
+
+Queue      = FIFO
+Stack      = LIFO
+Deque      = Queue + Stack (Interface)
+ArrayDeque = Implementation of Deque
+
+----------------------------------------
+
+Time Complexity:
+
+Queue:
+offer() O(1)
+poll()  O(1)
+peek()  O(1)
+
+Stack:
+push()  O(1)
+pop()   O(1)
+peek()  O(1)
+
+ArrayDeque:
+offer() O(1)
+poll()  O(1)
+push()  O(1)
+pop()   O(1)
+peek()  O(1)
+-----------------------------------------------
+
+conclsuion :
+
+use Deque<Integer> d = new ArrayDeque()<>;
+
+-can do queue
+-can do stack
+-can do both
+
+Instead of using only linkedList (implimentation) for stack
+Instead of using only linkedList (implimentation) for deque
+
+----------------------------------------------------------------------------------
+In Deque
+For a Stack & queue , use the stack-specific & queue-sepcefic methods better understand to reader:
+
+push() -> insert not addLast
+pop()  -> remove not removeLast
+peek() -> top element not peekLast
+
+Queue Methods
+offer() -> insert at rear not addFirst
+poll()  -> remove from front not removeFirst
+peek()  -> view front not peekFirst
