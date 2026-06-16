@@ -5,39 +5,19 @@ import java.util.*;
 public class Pr {
 	public static void main(String[] args) {
 
-		Deque<Integer> d = new ArrayDeque<>();
+		PriorityQueue<Integer> p = new PriorityQueue<>();
+		p.add(6);
+		p.add(1);
+		p.add(2);
+		p.add(3);
+		p.add(5);
 
-		d.add(10);
-		d.add(20);
-		d.add(30);
-		d.add(40);
+		System.out.println(p);
 
-
-//		queue
-
-//		enter
-		d.addFirst(100);
-		d.addFirst(200);
-
-		System.out.println(d);
-
-//		remove
-		d.removeFirst();
-		System.out.println(d);
-
-//		stack
-
-//		add
-		d.addLast(400);
-		d.addLast(300);
-		System.out.println(d);
-
-//		remove
-		d.removeLast();
-		System.out.println(d);
-
-		System.out.println(d.peekFirst());
-		System.out.println(d.peekLast());
+//		poll -> remove top/highest priorty element
+//		p.poll();
+		System.out.println(p);
 
 	}
 }
+

@@ -105,4 +105,127 @@ Level 2 -> 4 nodes
 Level 3 -> 8 nodes
 Level 4 -> 16 nodes
 
+-------------------------------------------------------------
+
+Priority Queue
+      ↓ implemented by
+     Heap
+      ↓
+Complete Binary Tree
+      ↓
+Stored in Array
+
+-------------------------------------------------------------
+
+PriorityQueue internally uses a Heap (Min Heap by default in Java) and
+automatically performs all the heap operations (insert, swap, re-heapify) for you.
+
+You only call add(), peek(), and poll(); Java maintains the heap structure behind the scenes,
+so you don't manually build or balance the heap tree.
+
+Example
+
+PriorityQueue<Integer> p = new PriorityQueue<>();
+
+p.add(6);
+p.add(1);
+p.add(2);
+p.add(3);
+p.add(5);
+
+Add 6
+6
+Array:
+[6]
+
+Add 1
+
+Insert at end:
+  6
+ /
+1
+
+Now heap property is violated because parent > child.
+
+Swap 1 and 6:
+
+  1
+ /
+6
+
+Array:
+[1, 6]
+
+Add 2
+
+Insert at end:
+    1
+   / \
+  6   2
+
+Since 1 < 2, no swap.
+
+Array:
+[1, 6, 2]
+
+Add 3
+
+Insert:
+      1
+     / \
+    6   2
+   /
+  3
+
+Compare with parent 6.
+
+3 < 6 ⇒ swap
+      1
+     / \
+    3   2
+   /
+  6
+
+Array:
+[1, 3, 2, 6]
+
+Add 5
+
+Insert:
+      1
+     / \
+    3   2
+   / \
+  6   5
+
+Compare with parent 3.
+
+5 > 3 ⇒ no swap.
+
+Final heap:
+      1
+     / \
+    3   2
+   / \
+  6   5
+
+Array representation:
+[1, 3, 2, 6, 5]
+-------------------------------------------------------------
+
+Data Structures
+│
+├── Linear
+│   ├── Array
+│   ├── Linked List
+│   ├── Stack
+│   └── Queue
+│
+└── Non-Linear
+    ├── Tree
+    │   ├── BST
+    │   ├── AVL
+    │   └── Heap
+    │
+    └── Graph
  */
