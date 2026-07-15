@@ -59,4 +59,6 @@ but it is not consumed by nextInt(), so nextLine() reads it and returns an empty
 
 So nextInt() only consumes 20, not the Enter key. That leftover Enter (\n) is later consumed by sc.nextLine().
 If we don’t write an extra nextLine(), then the next nextLine() method consumes it and returns an empty string.”
+
+so only nextLIne consumes input + \n not others like (nextInt,nextFloat)
 */

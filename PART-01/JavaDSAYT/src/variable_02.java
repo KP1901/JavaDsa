@@ -4,7 +4,7 @@ public class variable_02 {
 		// declaration
 		int age;
 //		System.out.println(age);
-		age = 20;
+		age = 20; // initialization
 		age = 50;
 		System.out.println(age);
 
@@ -12,7 +12,7 @@ public class variable_02 {
 		int score = 20;
 		System.out.println(score);
 
-		//case sensitive
+		// case sensitive
 		String name = "kran";
 		String Name = "ajit";
 		System.out.println(name);

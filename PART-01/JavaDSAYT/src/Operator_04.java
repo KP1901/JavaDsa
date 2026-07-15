@@ -27,9 +27,9 @@ public class Operator_04 {
 
 		int a1 = 10;
 		int a2 = 30;
-		System.out.println(a1<a2 && a1>a2);
-		System.out.println(a1<a2 || a1>a2);
-		System.out.println(!(a1<a2));
+		System.out.println(a1 < a2 && a1 > a2);
+		System.out.println(a1 < a2 || a1 > a2);
+		System.out.println(!(a1 < a2));
 
 		// assignment operator
 

@@ -11,6 +11,7 @@ public class p5 {
 	 * * * * *
 
  solid pyramid pattern
+
 	 * */
 	static void main(String[] args) {
 		int n = 5;

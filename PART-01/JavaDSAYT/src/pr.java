@@ -1,17 +1,27 @@
+class Animal {
+	static void info() {
+		System.out.println("it give information about animal");
+	}
+}
+
+
+class Cat extends Animal {
+	static void info() {
+		System.out.println("this is Cat");
+	}
+}
+
+class Dog extends Animal {
+	static void info() {
+		System.out.println("this is Dog");
+	}
+}
+
+
 public class pr {
+	static void main(String[] args) {
 
-	public static int add(int a, int b) {
-		return a + b;
-	}
-
-	public static int add(int a, int b, int c) {
-		return a + b + c;
-	}
-
-	public static void main(String[] args) {
-
-		System.out.println(add(10, 20));
-		System.out.println(add(10, 20, 30));
-
+		Animal a = new Cat();
+		a.info();
 	}
 }

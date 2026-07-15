@@ -60,3 +60,42 @@ public class methods_10 {
 		System.out.println(value);
 	}
 }
+
+/*
+
+call by value :
+
+- Primitive: Java passes a copy of the value.
+  Changing the copy does not affect the original.
+
+- Non-primitive: Java passes a copy of the reference.
+  Both references point to the same object, so changing the object's data affects the original object.
+
+  Method Overloading — Short Notes
+  - Same method name with different parameters.
+  - Parameters can differ by number, type, or order.
+  - Return type alone cannot overload a method.
+  - It is compile-time polymorphism — the compiler decides which method to call based on the arguments.
+
+  Method Overriding — Short Notes
+  - A child class provides its own version of a parent class method.
+  - Method name and parameters must be the same.
+  - It is runtime polymorphism — JVM decides which method to run based on the actual object.
+
+   Parent obj = new Child();
+
+   obj.show();  // Child's show() runs
+
+   Remember:
+   Overloading → compiler decides.
+   Overriding → JVM decides at runtime.
+
+   Remember:
+   static → reference type decides.
+   Non-static overridden method → actual object decides.
+
+   A child class overrides an inherited non-static method of the parent class by providing
+   its own implementation with the same method signature.
+
+   Overriding = Inheritance + Same non-static method signature + Child's own implementation + Runtime polymorphism
+*/

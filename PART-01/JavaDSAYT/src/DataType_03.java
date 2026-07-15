@@ -50,3 +50,31 @@ public class DataType_03 {
 
 	}
 }
+
+/*
+| Type      |          Size | Example             | Range / Values                  | Default* |
+| --------- | ------------: | ------------------- | ------------------------------- | -------- |
+| `byte`    |        1 byte | `byte a = 10;`      | -128 to 127                     | `0`      |
+| `short`   |       2 bytes | `short a = 1000;`   | -32,768 to 32,767               | `0`      |
+| `int`     |       4 bytes | `int a = 100;`      | about -2.1B to 2.1B             | `0`      |
+| `long`    |       8 bytes | `long a = 100L;`    | very large integers             | `0L`     |
+| `float`   |       4 bytes | `float a = 10.5F;`  | ~6–7 decimal digits precision   | `0.0F`   |
+| `double`  |       8 bytes | `double a = 10.5;`  | ~15–16 decimal digits precision | `0.0D`   |
+| `char`    |       2 bytes | `char a = 'A';`     | `\u0000` to `\uFFFF`            | `\u0000` |
+| `boolean` | JVM-dependent | `boolean a = true;` | `true` / `false`                | `false`  |
+
+typecasting => convert one datatype to another
+widening => small -> larger (auto)
+narrowing => larger -> small (manual)
+
+ch -> integer (auto)
+
+		char ch = 'a';
+		int s = ch;
+
+integer -> ch (manual)
+
+		int x = 65;
+		char ch =(char) x;
+
+ */
