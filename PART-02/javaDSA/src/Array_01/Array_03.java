@@ -12,4 +12,11 @@ public class Array_03 {
 		}
 	}   
 }
-// find the particular column length as you reached
+
+/*
+
+A jagged array is a 2D array where each row can have a different number of elements.
+Example: {{1, 2}, {3, 4, 5}, {6}}
+
+arr[i] - gives particular column length as you reached
+ */

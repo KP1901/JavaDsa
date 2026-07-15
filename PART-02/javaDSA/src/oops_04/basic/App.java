@@ -55,5 +55,20 @@ Student s = new Student(1,"kiran");
 
 Cleaner and safer.
 
+------------------------------------------------------------------------------------------
+
+A default constructor is a no-argument constructor automatically provided by the
+Java compiler when you don't write any constructor.
+
+Student() {
+}
+Flow :
+
+- Whenever we create an object using new, a constructor is called.
+- If you write no constructor, Java provides a default constructor.
+- If you write Student() {}, it is a no-argument constructor, not technically the default constructor.
+- A parameterized constructor receives values and can initialize the object's instance variables.
+
+Remember: new Object() → object created → instance variables get default values → constructor executes.
 
 */

@@ -68,3 +68,15 @@ public class stringMethods_02 {
 
 	}
 }
+
+/*
+
+Ways to Convert to String in Java
+
+String.valueOf(value);    // Best/common way
+Integer.toString(num);    // For int
+Double.toString(num);     // For double
+value.toString();         // For objects (fails if value is null)
+"" + value;               // String concatenation
+
+ */
