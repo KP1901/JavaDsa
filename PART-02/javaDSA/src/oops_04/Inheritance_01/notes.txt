@@ -33,7 +33,7 @@ Important Rules:
   → One child can extend only one parent class
 • Java does NOT support multiple inheritance with classes
 • Multiple inheritance is possible using interfaces
-• Private members are NOT directly accessible in child classes
+• Private members are NOT directly accessible in child classes (use getters and setters)
 
 ---------------------------------------------------
 

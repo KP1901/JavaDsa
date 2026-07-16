@@ -13,7 +13,7 @@ It is one of the main pillars of OOP (Object-Oriented Programming).
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Real-Life Example
-
+~
 Car Example:
 
 You press accelerator
@@ -63,89 +63,15 @@ How Abstraction is Achieved
 Using:
 
 Abstract Classes
-
 Interfaces
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Abstract Class Example
-
-abstract class Animal {
-
-```
-abstract void sound();
-```
-
-}
-
-class Dog extends Animal {
-
-```
-void sound() {
-    System.out.println("Bark");
-}
-```
-
-}
-
-Usage:
-
-public class App {
-
-```
-public static void main(String[] args) {
-
-    Dog d = new Dog();
-
-    d.sound();
-}
-```
-
-}
-
-Output:
-
-Bark
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-Interface Example
-
-interface Vehicle {
-
-```
-void start();
-```
-
-}
-
-class Car implements Vehicle {
-
-```
-public void start() {
-
-    System.out.println("Car Started");
-}
-```
-
-}
-
-Usage:
-
-Car c = new Car();
-
-c.start();
-
-Output:
-
-Car Started
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Why Use Abstraction?
 
 Hide Complexity
-
 Users focus only on usage.
 
 Example:
@@ -157,13 +83,9 @@ No need to know internal engine logic.
 Security
 
 Internal implementation remains hidden.
-
 Better Maintenance
-
 Internal changes do not affect users.
-
 Code Reusability
-
 Common behavior can be reused.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -171,19 +93,15 @@ Common behavior can be reused.
 Important Keywords
 
 abstract
-
 → Used for abstract classes and methods
 
 interface
-
 → Used to achieve abstraction
 
 implements
-
 → Used to implement interfaces
 
 extends
-
 → Used to inherit abstract classes
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -193,7 +111,6 @@ Abstract Method Rules
 Abstract methods:
 
 Do NOT have body
-
 Must be overridden
 
 Example:
@@ -211,9 +128,7 @@ abstract void show() {
 Abstract Class Rules
 
 ✔ Can have abstract methods
-
 ✔ Can have normal methods
-
 ✔ Cannot create object directly
 
 Wrong:
@@ -226,77 +141,21 @@ Abstraction Formula
 
 Hide Implementation + Show Essential Features = Abstraction
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-Full Example
-
-abstract class Payment {
-
-```
-abstract void pay();
-```
-
-}
-
-class UPI extends Payment {
-
-```
-void pay() {
-
-    System.out.println("Payment Done");
-}
-```
-
-}
-
-public class App {
-
-```
-public static void main(String[] args) {
-
-    Payment p = new UPI();
-
-    p.pay();
-}
-```
-
-}
-
-Output:
-
-Payment Done
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Abstraction vs Encapsulation
 
 Abstraction:
 
 Hides implementation
-
 Focus on simplicity
-
 Uses abstract classes/interfaces
 
 Encapsulation:
 
 Hides data
-
 Focus on security
-
 Uses private variables
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-Is Abstraction Only About Abstract Classes?
-
-No.
-
-It is about:
-
-Hiding complexity
-Exposing only required functionality
-Keeping implementation hidden
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 

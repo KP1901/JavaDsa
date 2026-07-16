@@ -92,4 +92,30 @@ Why?
 Because actual object is:
 new Circle()
 Runtime checks actual object.
+
+-------------------------------------------------------------------------------------
+
+
+  Method Overriding — Short Notes
+
+  - A child class provides its own version of a parent class method.
+  - Method name and parameters must be the same.
+  - It is runtime polymorphism — JVM decides which method to run based on the actual object.
+
+   Parent obj = new Child();
+
+   obj.show();  // Child's show() runs
+
+   Remember:
+   Overloading → compiler decides.
+   Overriding → JVM decides at runtime.
+
+   Remember:
+   static → reference type decides.
+   Non-static overridden method → actual object decides.
+
+   A child class overrides an inherited non-static method of the parent class by providing
+   its own implementation with the same method signature.
+
+   Overriding = Inheritance + Same non-static method signature + Child's own implementation + Runtime polymorphism
 */

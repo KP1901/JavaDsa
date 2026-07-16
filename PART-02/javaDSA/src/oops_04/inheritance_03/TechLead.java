@@ -39,3 +39,17 @@ public class TechLead extends Empolyee implements ProjectManager, TeamLead {
 	}
 
 }
+/*
+remember: Interface method → implicitly public & abstract.
+          Class method with no modifier → package-private.
+          Therefore, you must explicitly write public when implementing the interface method.
+
+Multiple inheritance: When one child class inherits from more than one parent.
+
+In Java, it is achieved using multiple interfaces.
+
+class Child implements Father, Mother { }
+
+Child gets behavior/contracts from both Father and Mother.
+
+ */

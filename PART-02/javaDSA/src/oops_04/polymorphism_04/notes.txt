@@ -154,7 +154,6 @@ Most Important for Coding:
 
 ====================================================
 
-/*
 Rules
 
 1. Child class must inherit parent class
@@ -165,4 +164,3 @@ Rules
 6. Use @Override (recommended)
 7. Constructors are NOT overridden (can have any length of parameter)
 
- */

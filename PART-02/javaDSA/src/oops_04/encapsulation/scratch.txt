@@ -132,41 +132,6 @@ Private Variables + Public Methods = Encapsulation
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Full Example
-class BankAccount {
-
-    private double balance;
-
-    void deposit(double amount) {
-
-        if(amount > 0) {
-            balance += amount;
-        }
-    }
-
-    double getBalance() {
-        return balance;
-    }
-}
-
-public class App {
-
-    public static void main(String[] args) {
-
-        BankAccount b = new BankAccount();
-
-        b.deposit(5000);
-
-        System.out.println(b.getBalance());
-    }
-}
-
-Output:
-
-5000.0
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
 Encapsulation vs Abstraction
 
 Encapsulation:
@@ -198,9 +163,7 @@ Exposing only required functionality
 Best Practices
 
 ✔ Make variables private
-
 ✔ Use getters and setters
-
 ✔ Validate data inside setters
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
