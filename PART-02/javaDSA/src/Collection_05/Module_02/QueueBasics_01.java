@@ -129,4 +129,31 @@ front/head -> peek()
 
 Stack
 top -> peek()
+
+Collection
+│
+├── List
+│   ├── ArrayList
+│   ├── LinkedList  ← also implements Deque
+│   └── Vector
+│       └── Stack
+│
+├── Queue
+│   ├── PriorityQueue
+│   └── Deque
+│       ├── ArrayDeque
+│       └── LinkedList
+│
+└── Set
+    ├── HashSet
+    ├── LinkedHashSet
+    └── TreeSet
+
+
+Map  ← Separate from Collection
+│
+├── HashMap
+├── LinkedHashMap
+└── TreeMap
+
 */

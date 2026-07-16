@@ -189,6 +189,7 @@ even with:
 List<Integer> list = new LinkedList<>();
 
 because LinkedList implements both List and Deque.
+deque means double ended queue (queue + stack)
 
 Methods:
 addFirst()
@@ -256,4 +257,14 @@ LinkedList can work as:
 ✓ Queue
 ✓ Deque
 ✓ Stack (via Deque methods)
+
+
+IMP :
+
+LinkedList can be used as List + Queue + Stack (through Deque),
+but for only Stack/Queue operations, prefer ArrayDeque.
+
+Need frequent random access (get(index)) → ArrayList
+Need frequent add/remove at both ends while also needing a List → LinkedList
+Need only Stack or Queue → usually ArrayDeque
 */

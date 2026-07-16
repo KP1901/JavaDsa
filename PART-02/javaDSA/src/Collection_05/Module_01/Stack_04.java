@@ -212,5 +212,8 @@ Applications:
 
 Interview Definition
 
-A Stack is a linear data structure that follows the LIFO (Last In, First Out) principle, where insertion and deletion happen only at the top
+A Stack is a linear data structure that follows the LIFO (Last In, First Out) principle,
+where insertion and deletion happen only at the top
+
+for stack operation prefer arrayDeque
  */
